@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const containerVarients = {
@@ -29,6 +29,7 @@ const childVarients = {
 };
 
 const Order = ({ pizza }) => {
+  const [showTitle, setShowTitle] = useState(true);
   return (
     <motion.div
       variants={containerVarients}
